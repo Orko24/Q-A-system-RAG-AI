@@ -1,0 +1,31 @@
+# Claude-Only Configuration
+# Copy this to .env and fill in your values
+
+# Database Configuration
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+POSTGRES_DB=qdocument_qa
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=change-this-secure-password
+
+# API Keys (Only Claude required!)
+CLAUDE_API_KEY=sk-ant-your-claude-api-key-here
+
+# Application Security
+SECRET_KEY=your-super-secret-key-change-in-production-minimum-32-characters
+
+# File Upload Configuration
+MAX_FILE_SIZE_MB=50
+UPLOAD_DIR=./uploads
+
+# Vector Database
+CHROMA_DB_PATH=./chroma_db
+CHUNK_SIZE=1000
+CHUNK_OVERLAP=200
+
+# Frontend Configuration
+REACT_APP_API_URL=http://localhost:8000
+REACT_APP_WS_URL=localhost:8000
+
+# CORS Configuration (JSON array format)
+ALLOWED_ORIGINS=["http://localhost:3000", "http://frontend:80", "http://localhost"]
